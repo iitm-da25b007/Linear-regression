@@ -1,0 +1,46 @@
+{
+    "training_config": {
+        "epochs": 100,
+        "batch_size": 64
+    },
+    "baseline_val_metrics": {
+        "mse": 88.67790667999999,
+        "rmse": 9.416894747208339,
+        "mae": 5.94867272,
+        "r2_score": -0.0001981664299766095,
+        "mape_percent": 65.66967927106447
+    },
+    "first_order_methods": {
+        "SGD": {
+            "mse": 20.858999535835697,
+            "rmse": 4.567165372070043,
+            "mae": 2.4576959251342747,
+            "r2_score": 0.7647313308308847,
+            "mape_percent": 27.612646329783182,
+            "epochs_trained": 100
+        },
+        "Adam": {
+            "mse": 22.615837244756484,
+            "rmse": 4.755611132626014,
+            "mae": 2.7471811214764843,
+            "r2_score": 0.7449159571829869,
+            "mape_percent": 32.961747716504256,
+            "epochs_trained": 100
+        }
+    },
+    "second_order_methods": {
+        "Newton": {
+            "mse": 20.303265113416362,
+            "rmse": 4.505914459176557,
+            "mae": 2.3315741039959135,
+            "r2_score": 0.7709994597384788,
+            "mape_percent": 24.441061879014793,
+            "epochs_trained": 100
+        }
+    },
+    "comparison": {
+        "best_first_order_mse": 20.858999535835697,
+        "best_second_order_mse": 20.303265113416362,
+        "second_order_advantage_mse": 0.5557344224193344
+    }
+}
